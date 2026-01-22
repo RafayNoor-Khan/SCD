@@ -1,28 +1,22 @@
-import React from "react";
+import React from 'react'
 
-export default function Page() {
+export default function () {
   return (
-    <div style={{ background: "red" }}>
-      <div style={{ width: "70%", margin: "auto", background: "white" }}>
-      
-        <div style={{ height: "120px" }}></div>
-        <div style={{background: "black",color: "white",padding: "10px"}}>
-          Home About Us Products Contact Us
+    <div className='bg-red-700 min-h-screen'>
+        <div className='m-auto w-[80%]'>
+            <img src="/image.png" alt="" className='w-[100%] h-[100px]' />
+            <div className='bg-black flex p-[4px] gap-6'>
+                <p>home</p>
+                <p>about us</p>
+                <p>products</p>
+                <p>contact us</p>
+            </div>
+            <div className='flex'>
+                <div className='bg-green-700 w-[30%] h-[450px]'>left</div>
+                <div className='bg-yellow-500 w-[70%] h-[450px]'>right</div>
+            </div>
+            <div className='bg-blue-900 h-[100px]'>footer</div>
         </div>
-
-        <div style={{ display: "flex", height: "350px" }}>
-          <div style={{width: "30%",background: "green",color: "white",}}>
-            Left
-          </div>
-
-          <div style={{width: "70%",background: "orange",color: "white",}}>
-            Right
-          </div>
-        </div>
-        <div style={{background: "blue",color: "white",padding: "50px",}}>
-          Footer Section
-        </div>
-      </div>
     </div>
-  );
+  )
 }
