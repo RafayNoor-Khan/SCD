@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function () {
   return (
-    <div className='bg-red-700 min-h-screen'>
+    <div className='bg-red-700 min-nh-screen'>
         <div className='m-auto w-[80%]'>
             <img src="/image.png" alt="" className='w-[100%] h-[100px]' />
             <div className='bg-black flex p-[4px] gap-6'>
